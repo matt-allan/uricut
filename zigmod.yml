@@ -1,0 +1,9 @@
+id: titkau664yhy33y1ehfdrh2d967kiry42o9ce1dorzw0g7v8
+name: uricut
+license: MIT
+description: Print selected parts of a URI
+root_dependencies:
+  - src: git https://github.com/Vexu/zuri
+    version: commit-d5cce7e
+  - src: git https://github.com/Hejsil/zig-clap
+    version: commit-a1b01ff
