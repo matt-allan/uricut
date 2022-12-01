@@ -10,8 +10,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: goto-bus-stop/setup-zig@v1
         with:
-          version: 0.11.0+fc3142aa9
-      - uses: nektro/actions-setup-zigmod
+          version: 0.11.0-dev.426+fc3142aa9
+      - uses: nektro/actions-setup-zigmod@v1
+
+      - name: Mod
+        run: zigmod ci
 
       - name: Build
         run: zig build
